@@ -1,5 +1,12 @@
 const hambuguer = document.querySelector('.hamburguer');
-const nav = document.querySelector('.nav');
 
-hambuguer.addEventListener("click", () => nav.classList.toggle("active"));
+function toggleMenu(event) {
+    if(event.type === 'touchstart') event.preventDefault()
+    
+    const nav = document.querySelector('.nav');
+    nav.classList.toggle('active');
+}
+
+hambuguer.addEventListener('click', toggleMenu);
+hambuguer.addEventListener('touchstart', toggleMenu);
 
