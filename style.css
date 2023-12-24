@@ -42,7 +42,6 @@
     background: currentColor;
     margin-top: 5px;
     position: relative;
-
     transition: .3s;
 }
 
@@ -57,7 +56,6 @@
 .nav.active .hamburguer::after {
     transform: rotate(-135deg);  
     top: -8px;
-
 }
 
 .nav-list {
@@ -103,9 +101,30 @@
     padding-block: 16px;
 }
 
-.hero {
+main {
     height: calc(100vh);
     background: center / cover no-repeat url("./background.png");
+}
+
+.hero {
+    margin-top: 32px;
+    font-size: 24px;
+    color: #7C3E1B;
+    gap: 24px;
+}
+
+.button-whats {
+    background-color: #7C3E1B;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 16px;
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 32px;
+    align-self: flex-end;
+    cursor: pointer;
 }
 
 section {
